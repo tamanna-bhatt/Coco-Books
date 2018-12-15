@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="16.7dp"
+    android:paddingLeft="15.3dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android"
+        android:id="@+id/iconImage"
+        android:layout_marginLeft="17.3dp"
+        android:layout_gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="33dp">
+        <customfonts.MyTextView_Roboto_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science Fiction"
+            android:id="@+id/bookType"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+        <customfonts.MyTextView_Roboto_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="129 Books"
+            android:id="@+id/NoOfBooks"
+            android:textColor="@color/greyText3"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="27dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/viewlineColor"
+        android:layout_marginLeft="60.5dp"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

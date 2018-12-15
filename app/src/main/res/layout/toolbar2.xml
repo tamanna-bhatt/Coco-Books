@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbarColor">
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_left_arrow"/>
+    <customfonts.MyTextView_Roboto_Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:textSize="16.7sp"
+        android:textColor="@color/white"
+        android:text="My Library"
+        android:layout_marginLeft="38.3dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:id="@+id/both">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_magnifying"
+        android:id="@+id/search"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_menu"
+        android:id="@+id/menu"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CocoBooksReadActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include layout="@layout/toolbar2"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="160dp"
+            android:orientation="vertical">
+    <customfonts.MyTextView_Roboto_Medium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Best of the Brontës"
+        android:textColor="@color/black"
+        android:textSize="16.7dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="19dp"
+        />
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="14dp"
+        android:lineSpacingExtra="4dp"
+        android:text="The elongated S’s have been changed to small s’s and the conjoined ae have been changed to ae. I have left the spelling, punctuation, capitalization as close as possible to the printed text. I have corrected some spelling mistakes (I have put together a spelling dictionary devised from the spellings of the Geneva Bible and Shakespeare’s First Folio and have unified spellings according to this template), typo’s and expanded
+abbreviations as I have come across them. Everything within brackets  is what I have added. So if you don’t like that you can delete everything within the brackets if you want a purer Shakespeare.\n
+
+Another thing that you should be aware of is that there are textual differences between various copies of the first folio. So there may be differences (other than what I have mentioned above) between this and other first folio editions. This is due to the printer’s habit of setting the type and running off a number of copies and then proofing the printed copy and correcting the type and then continuing the printing run. The proof run wasn’t thrown away but
+incorporated into the printed copies. This is just the way it is.\n
+The text I have used was a composite of more than 30 different
+First Folio editions' best pages."/>
+
+        </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/readBookBg">
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:max="200"
+            android:progress="70"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:secondaryProgressTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:thumbTint="#ffdf74"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 3/15"
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:textColor="@color/gerytxtcolor4"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/play"
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_pause"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_equal"
+                    android:rotation="90"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/front"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
