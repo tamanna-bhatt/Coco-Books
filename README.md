@@ -1,5 +1,5 @@
-# Coco-Books
-Android UI Kit
+# Coco-Books (Android UI Kit)
+
 The COCO Book is reading book UI kit ,which will  lets you adjust fonts, font size, background colors, and other options.
 
 The XML and JAVA files contains comments at each and every point for easy understanding.
